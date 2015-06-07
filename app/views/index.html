@@ -1,0 +1,35 @@
+<script src="../scripts/app.js"></script>
+<script src="../scripts/controllers/main.js"></script>
+
+<script>
+  var g = new JustGage({
+    id: "gauge",
+    value: 67,
+    min: 0,
+    max: 100,
+    title: "Stresslevel"
+  });
+
+</script>
+
+<div class="jumbotron">
+<h2>Aktueller Stresswert</h2>
+	<div id="gauge" class="200x160px"></div>
+	<strong>Tipp:</strong> Kurze Pause in der Arbeit einlegen
+
+</div>
+
+<hr >
+
+<div class="werte">
+	<h3>Aktuelle Werte</h3>
+	<br/>
+	<span class="col-xs-4">Puls: 90/min</span>
+	<span class="col-xs-4 alert-danger">Gearbeitete Stunden: 7 Stunden</span>
+	<span class="col-xs-4">Heute gelaufene Kilometer: 1 km</span>
+	<span class="col-xs-4">Wachzeit: 11 Stunden</span>
+	<span class="col-xs-4 alert-danger">Blutdruck: hoch</span>
+	<span class="col-xs-4"></span>
+
+</div>
+<br/>
