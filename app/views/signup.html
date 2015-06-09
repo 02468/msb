@@ -1,65 +1,69 @@
 <h3>Deine Daten</h3>
 <div class="col-xs-12">
-<form onSubmit="return false">
-<table class="table table-responsive table-hover">
-   
-    <tr>
-      <td>Name</td>
-      <td><input placeholder="Name" id="name" name="name" tabindex="1"></td>
-    </tr>
-   
+    <form onSubmit="return false">
+        <table class="table table-responsive table-hover">
 
-    <tr>
-        <td>Alter </td>
-        <td><select >
-	<option>0-14</option>
-	<option>15-18</option>
-	<option>19-25</option>
-	<option>26-30</option>
-	<option>30-40</option>
-	<option>40-50</option>
-	<option>50+</option>
-	</select></td>
-    </tr>
-   
- 
-   
-    <tr>
-        <td>Telefonnummer </td>
-        <td><input placeholder="Deine Telefonnummer" id="phone" name="phone" tabindex="3"> </td>
-    </tr>
-   
-   
-    <tr>
-        <td>Email </td>
-        <td><input placeholder="Deine E-mail Adresse" id="email" name="email" tabindex="4"> </td>
-    </tr>
-   
-   
-    <tr>
-        <td>Arbeitsstunden </td>
-        <td> <select tabindex="5">
-        <option>5-15h pro Woche</option>
-        <option>15-30h pro Woche</option>
-        <option>30-40h pro Woche</option>
-      </select></td>
-    </tr>
-   
+            <tr>
+                <td>Vorname</td>
+                <td><input placeholder="Name" id="firstname" name="firstname" tabindex="1"></td>
+            </tr>
 
-    <tr>
-        <td> E-mail Updates?</td>
-        <td><input type="checkbox" class="js-switch"></td>
-    </tr>
+            <tr>
+                <td>Nachname</td>
+                <td><input placeholder="Name" id="lastname" name="lastname" tabindex="1"></td>
+            </tr>
 
 
+            <tr>
+                <td>Alter</td>
+                <td><select>
+                    <option>0-14</option>
+                    <option>15-18</option>
+                    <option>19-25</option>
+                    <option>26-30</option>
+                    <option>30-40</option>
+                    <option>40-50</option>
+                    <option>50+</option>
+                </select></td>
+            </tr>
 
-   
- 
-  <tr class="col-submit">
-      <td>
-    <button ng-click="notAvailable()" class="btn-group btn-success submitbtn">Anmelden</button> </td>
-      <td><a href="#/index"><button class="btn-group btn-warning">Spaeter</button></a> </td>
-   
-</table> 
-</form>
+
+            <tr>
+                <td>Telefonnummer</td>
+                <td><input placeholder="Deine Telefonnummer" id="phone" name="phone" tabindex="3"></td>
+            </tr>
+
+
+            <tr>
+                <td>Email</td>
+                <td><input placeholder="Deine E-mail Adresse" id="email" name="email" tabindex="4"></td>
+            </tr>
+
+
+            <tr>
+                <td>Arbeitsstunden</td>
+                <td><select tabindex="5">
+                    <option>5-15h pro Woche</option>
+                    <option>15-30h pro Woche</option>
+                    <option>30-40h pro Woche</option>
+                </select></td>
+            </tr>
+
+
+            <tr>
+                <td> E-mail Updates?</td>
+                <td><input type="checkbox" class="js-switch"></td>
+            </tr>
+
+
+            <tr class="col-submit">
+                <td>
+                    <button ng-click="notAvailable()" class="btn btn-group btn-success submitbtn">Anmelden</button>
+                </td>
+                <td><a href="#/index">
+                    <button class="btn btn-group btn-warning">Spaeter</button>
+                </a></td>
+
+        </table>
+    </form>
 </div>
