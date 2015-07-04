@@ -22,7 +22,7 @@ angular.module('msbApp')
 		'description' : 'Gefahr durch Burnout, weniger arbeiten, dafür mehr Sport'
 	},
 	{
-		'level' : '20',
+		'level' : '70',
 		'date'  : '2015-01-01',
 		'description' : 'Stress verursacht durch xy'
 
@@ -31,7 +31,7 @@ angular.module('msbApp')
     ];
 
     $scope.notAvailable = function() {
-            alert("Diese Funktion ist leider noch nicht verfügbar");
+            alert("Diese Funktion ist leider nicht in der Demoversion verfügbar");
     }
 
     
