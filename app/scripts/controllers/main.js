@@ -17,19 +17,43 @@ angular.module('msbApp')
 
     $scope.stress = [
 	{
-		'level' : '80',
-		'date'  : '2014-04-21',
+		'level' : '75',
+		'date'  : '2014-01-21',
 		'description' : 'Gefahr durch Burnout, weniger arbeiten, dafür mehr Sport'
 	},
 	{
-		'level' : '70',
-		'date'  : '2015-01-01',
+		'level' : '59',
+		'date'  : '2015-02-01',
 		'description' : 'Stress verursacht durch xy'
-
-	}
+	},
+    {
+        'level' : '80',
+        'date'  : '2014-03-21',
+        'description' : 'Stress verursacht durch xy'
+    },
+    {
+        'level' : '81',
+        'date'  : '2015-04-01',
+        'description' : 'Stress verursacht durch xy'
+    },
+    {
+        'level' : '76',
+        'date'  : '2014-05-21',
+        'description' : 'Stress verursacht durch xy'
+    },
+    {
+        'level' : '66',
+        'date'  : '2015-06-01',
+        'description' : 'Stress verursacht durch xy'
+    },
+    {
+        'level' : '80',
+        'date'  : '2014-07-21',
+        'description' : 'Stress verursacht durch xy'
+    }
 
     ];
-
+//data: [75, 59, 80, 81, 76, 66, 80]
     $scope.notAvailable = function() {
             alert("Diese Funktion ist leider nicht in der Demoversion verfügbar");
     }
