@@ -2,35 +2,90 @@
 <script src="../scripts/controllers/main.js"></script>
 
 <script>
+    //Stresslevel
+    var value = 67;
     var g = new JustGage({
         id: "gauge",
-        value: 67,
+        value: value,
         min: 0,
         max: 100,
         title: "Stresslevel"
     });
 
+    $(".stresslevel_submit").click(function() {
+        var value = $(".stresslevel").val();
+        g.refresh(value);
+    });
+
+    //Puls
+    var puls = 90;
+    var p = new JustGage({
+        id: "puls",
+        value: puls,
+        min: 0,
+        max: 180,
+        title: "Puls: "+ puls+"/min"
+    });
+
+    //Wachzeit
+    var waketime = 11;
+    var t = new JustGage({
+        id: "waketime",
+        value: waketime,
+        min: 0,
+        max: 24,
+        title: "Wachzeit "+ waketime +"h"
+    });
+    function changeValues() {
+        g.refresh(72);
+        p.refresh(110);
+        t.refresh(14);
+        $('.workinghours').text('Gearbeitete Stunden: 8');
+        $('.progress-bar').css('width','90%');
+        $('.kilometers').text("Heute gelaufene Kilometer: 2 km");
+    }
 </script>
 
 <div class="jumbotron">
     <h2>Aktueller Stresswert</h2>
 
     <div id="gauge" class="200x160px"></div>
+
     <strong>Tipp:</strong> Kurze Pause in der Arbeit einlegen
+    <div class="feedback">
+        Falls der Stresswert nicht mit deinem aktuellen Befinden &uuml;bereinstimmt, kannst du ihn hier anpassen:
+        <input type="text" class="stresslevel" value="">
+        <input type="submit" class="stresslevel_submit" value="Wert anpassen">
+    </div>
 
 </div>
 
 <hr>
 
 <div class="werte">
-    <h3>Aktuelle Werte</h3>
+    <h3>Aktuelle Werte:</h3>
+
+    <input type="submit" value="Jetzt Werte aktualisieren" onclick="changeValues()">
     <br/>
-    <span class="col-xs-4">Puls: 90/min</span>
-    <span class="col-xs-4 alert-danger">Gearbeitete Stunden: 7 Stunden</span>
-    <span class="col-xs-4">Heute gelaufene Kilometer: 1 km</span>
-    <span class="col-xs-4">Wachzeit: 11 Stunden</span>
-    <span class="col-xs-4 alert-danger">Blutdruck: hoch</span>
-    <span class="col-xs-4"></span>
+    <span class="col-xs-6">
+        <div id="puls" class="200x160px"></div>
+    </span>
+
+    <span class="col-xs-6">
+        <div id="waketime" class="200x160px"></div>
+    </span>
+
+    <span class="col-xs-6 "><span class="workinghours">Gearbeitete Stunden: 7</span>
+        <div class="progress">
+            <div class="progress-bar " role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                <span class="sr-only">7 Stunden</span>
+            </div>
+        </div>
+    </span>
+    <span class="col-xs-6 kilometers">Heute gelaufene Kilometer: 1 km</span>
+
+    <span class="col-xs-6 alert-danger">Blutdruck: hoch</span>
+    <span class="col-xs-6"></span>
 
 </div>
 <br/>

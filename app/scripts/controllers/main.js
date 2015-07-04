@@ -24,7 +24,7 @@ angular.module('msbApp')
 	{
 		'level' : '20',
 		'date'  : '2015-01-01',
-		'description' : 'Stress verursacht durch hohen Alkoholpegel, weniger trinken, aber es ist ja Jahresanfang ;)'
+		'description' : 'Stress verursacht durch xy'
 
 	}
 
