@@ -57,6 +57,9 @@
         //Boolean - Whether to fill the dataset with a colour
         datasetFill : true,
 
+        //reponsive chart
+        responsive: true,
+
         //String - A legend template
         legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
 
@@ -75,7 +78,8 @@
     <td><b>Datum</b></td>
     <td><b>Beschreibung</b></td>
     </thead>
-    <tr ng-repeat="str in stress ">
+
+    <tr ng-repeat="str in stress | orderBy: 'date' : reverse=true ">
         <td>{{str.level}}</td>
         <td>{{str.date}}</td>
         <td>{{str.description}}</td>

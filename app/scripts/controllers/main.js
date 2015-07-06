@@ -18,7 +18,7 @@ angular.module('msbApp')
     $scope.stress = [
 	{
 		'level' : '75',
-		'date'  : '2014-01-21',
+		'date'  : '2015-01-21',
 		'description' : 'Gefahr durch Burnout, weniger arbeiten, dafür mehr Sport'
 	},
 	{
@@ -28,7 +28,7 @@ angular.module('msbApp')
 	},
     {
         'level' : '80',
-        'date'  : '2014-03-21',
+        'date'  : '2015-03-21',
         'description' : 'Stress verursacht durch xy'
     },
     {
@@ -38,7 +38,7 @@ angular.module('msbApp')
     },
     {
         'level' : '76',
-        'date'  : '2014-05-21',
+        'date'  : '2015-05-21',
         'description' : 'Stress verursacht durch xy'
     },
     {
@@ -48,15 +48,18 @@ angular.module('msbApp')
     },
     {
         'level' : '80',
-        'date'  : '2014-07-21',
+        'date'  : '2015-07-21',
         'description' : 'Stress verursacht durch xy'
     }
 
     ];
+
 //data: [75, 59, 80, 81, 76, 66, 80]
     $scope.notAvailable = function() {
             alert("Diese Funktion ist leider nicht in der Demoversion verfügbar");
     }
+
+
 
     
 

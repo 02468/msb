@@ -257,3 +257,22 @@ button {
 .werte span {
 	padding: 10px;
 }
+
+
+/* Modal */
+#modalcontainer {
+  top: 100px;
+}
+.modal-dialog {
+  background: white;
+  border-radius: 10px;
+ }
+.modal-content {
+  text-align: center;
+  padding: 15px;
+
+}
+.modal-footer {
+  border-top: 0px;
+  text-align: left;
+}

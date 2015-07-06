@@ -1,4 +1,12 @@
 <!doctype html>
+<!--
+    Sehr geehrte Mitarbeiter des Lehrstuhls WI 2,
+
+    vielen Dank fur das Interesse am Quellcode!
+
+
+    SS15 MSB
+-->
 <html class="no-js">
 <head>
     <meta charset="utf-8">
@@ -46,8 +54,10 @@
                     </li>
                     <li ng-click="active = 3" ng-class="{ 'active': active === 3 }"><a ng-href="#/tips">Tipps gegen
                         Stress</a></li>
-                    <li ng-click="active = 4" ng-class="{ 'active': active === 4 }"><a ng-href="#/logout"><span
-                            class="glyphicon glyphicon-log-out"></span></a></li>
+                    <li ng-click="active = 4" ng-class="{ 'active': active === 4 }"><a ng-href="#/logout">
+                        <span class="glyphicon glyphicon-alert" data-toggle="modal" data-target=".bs-example-modal-sm">
+                        </span></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -61,6 +71,25 @@
 <div class="footer">
     <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> We care about your health!</p>
+    </div>
+</div>
+
+
+<!-- Small modal -->
+<div id="modalcontainer" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+
+        <div class="modal-body">
+            <div class="modal-content">
+                <b><i>Achtung: </i></b> <br/>
+                <div class="alert alert-danger">Erh&ouml;htes Stresslevel: 80</div>
+                Bitte <u>Hinweise</u> beachten!
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+            <button type="button" class="btn btn-primary" ng-click="notAvailable()">Abbrechen</button>
+        </div>
     </div>
 </div>
 
