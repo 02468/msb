@@ -59,8 +59,12 @@ angular.module('msbApp')
             alert("Diese Funktion ist leider nicht in der Demoversion verfügbar");
     }
 
-
-
+    //Workaround fuer aktive Menuelemente
+    $('.nav li').click(function() {
+      //  alert('test');
+        $('.nav li').removeClass('active');
+        $(this).addClass('active');
+    })
     
 
   });
